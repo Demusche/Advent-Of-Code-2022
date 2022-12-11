@@ -1,7 +1,8 @@
 # Advent of Code
 # Day 1 Assignment 1
+import sys, os
 def main():
-    with open('input.txt') as f:
+    with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
         contents = f.readlines()
         mySet = set()
         sum = 0
