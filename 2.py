@@ -11,5 +11,10 @@ def main():
                 sum = 0
             else:
                 sum = int(i) + sum
-        print(max(mySet))
+        result = max(mySet) 
+        mySet.remove(max(mySet)) 
+        result = max(mySet) + result
+        mySet.remove(max(mySet))
+        result = max(mySet) + result
+        print(result)
 main()
